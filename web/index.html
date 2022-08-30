@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="google" value="notranslate">
+    <script type="text/javascript" src="/eel.js"></script> 
+    <script>
+        function callPython(){
+            let vidurl = document.getElementById("URL").value,
+            where = document.getElementById("where").value,
+            type0 = document.getElementById("formatmp3"),
+            type1 = document.getElementById("formatmp4"),
+            type;
+
+            if (type0.checked){
+                type = "mp3";
+            }
+            if (type1.checked){
+                type = "mp4";
+            }
+
+            eel.callPyt(vidurl, where, type);
+
+           
+            /*
+            eel.hello()(function que(n){
+                alert(n);
+            })
+            */
+
+        }
+
+        function folder(){
+            eel.browse_button()(function folderopener(x){
+                console.log(x);
+                document.getElementById("where").value = x;
+            })
+        }
+    </script>
+    <title>Float</title>
+    <link rel="icon" href="icon.png">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <div class="icon"></div>
+            <div class="text"><h1>Float</h1></div>
+        </div>
+        <div class="form">
+            <input type="url" class="textInput" placeholder="Video / Playlist URL" id="URL" required>
+            <br><br>
+            <div class="fileselect">
+                <input type="text" class="textInput" placeholder="Select Folder To Save" id="where" required>
+                <button onclick="folder()">Select</button>
+            </div>
+            <br>
+            <p>Save As:</p>
+            <div class="format">
+                <div class="fmt">
+                    <input type="radio" name="formal" id="formatmp3" value="MP3" required>
+                    <label for="formatmp3">MP3</label>
+                </div>
+                <p>Or In</p>
+                <div class="fmt">
+                    <input type="radio" name="formal" id="formatmp4" value="MP4" required>
+                    <label for="formatmp4">MP4</label>
+                </div>
+            </div>
+            <br>
+            <div class="dwld">
+                <button onclick="callPython()" id="dwld">Download</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
