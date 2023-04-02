@@ -6,6 +6,11 @@ Float is a Python-HTML App to Download, video, audio, and playlists from Youtube
 But well, I just did it to learn <a href="https://github.com/python-eel/Eel">Eel</a>.
 
 <h2>Features:</h2>
-👍 Fast And Easy to use <br>
-🤓 You can run it in your browser with <code>Localhost</code> <br>
-😶 Though this was made in Eel, It needs Tkinter (yeah, that's extremly stupid) <br>
+👍 Fast And Easy to use. <br>
+🤓 You can run it in your browser with <code>Localhost</code>. <br>
+😶 Though this was made in Eel, It needs Tkinter (yeah, that's extremly stupid). <br>
+
+<h2>Screenshot(s)</h2>
+<img src="https://raw.githubusercontent.com/PasteLuengas/Float/main/screenshot.PNG" alt="cute">
+<small>Well... I think UI is nice.</small>
+
