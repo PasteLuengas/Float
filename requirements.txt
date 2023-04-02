@@ -1,0 +1,4 @@
+eel
+pytube
+moviepy
+win10toast
