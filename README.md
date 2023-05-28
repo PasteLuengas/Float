@@ -11,6 +11,6 @@ But well, I just did it to learn <a href="https://github.com/python-eel/Eel">Eel
 😶 Though this was made in Eel, It needs Tkinter (yeah, that's extremly stupid). <br>
 
 <h2>Screenshot(s)</h2>
-<img src="https://raw.githubusercontent.com/PasteLuengas/Float/main/screenshot.PNG" alt="cute">
+<img src="https://raw.githubusercontent.com/PasteLuengas/Float/main/screenshot.PNG" alt="cute"><br>
 <small>Well... I think UI is nice.</small>
 
